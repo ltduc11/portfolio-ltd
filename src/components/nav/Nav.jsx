@@ -15,7 +15,7 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="/#"
+        href="#header"
         onClick={() => setActiveNav("#")}
         className={activeNav === "#" ? "active" : ""}
       >

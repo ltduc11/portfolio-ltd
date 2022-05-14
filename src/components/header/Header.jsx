@@ -4,7 +4,7 @@ import CTA from "./CTA";
 import ME from "../../assets/ltd-pic.png";
 function Header() {
   return (
-    <header>
+    <header id="header">
       <div className="container header__container">
         <h5>Hello ✌️ My name is</h5>
         <h1>Thai Duc</h1>
