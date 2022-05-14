@@ -1,0 +1,53 @@
+.about__container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: calc(100% - 12rem);
+}
+
+.about__me {
+  width: 50%;
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.about__me-header {
+}
+
+.about__me-content {
+  text-align: justify;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.about__card {
+  background-color: var(--color-bg-variant);
+  border: 1px solid transparent;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+  margin: 0.5rem;
+}
+
+.about__card:hover {
+  background: var(--color-bg-variant-opacity);
+  border-color: var(--color-primary);
+  cursor: default;
+}
+
+.about__btn {
+}

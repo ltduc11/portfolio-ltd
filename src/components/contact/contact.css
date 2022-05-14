@@ -1,0 +1,61 @@
+.contact__container {
+  height: calc(100% - 12rem);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 10% 0;
+}
+
+.contact__option:hover {
+  background: var(--color-bg-variant-opacity);
+  border-color: var(--color-secondary);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+}
+
+/* FORM */
+
+.contact__form {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--color-secondary);
+  resize: none;
+  color: var(--color-light);
+}
+
+.contact__form-btn {
+  float: right;
+}

@@ -1,0 +1,46 @@
+header {
+  height: 100vh;
+  padding-top: 3rem;
+  overflow: hidden;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ----- CTA ------ */
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ----- ME ------ */
+.me {
+  background: var(--color-primary);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 2rem;
+  border-radius: 12rem 12rem 6rem 6rem;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+}
+
+/* ----- MEDIA QUERIES (SMALL DEVICES) ----*/
+@media screen and (max-width: 600) {
+  header {
+    height: 100vh;
+  }
+}

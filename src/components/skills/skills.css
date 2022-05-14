@@ -1,0 +1,28 @@
+.skill__container {
+  height: calc(100% - 12rem);
+  display: flex;
+  align-items: center;
+}
+
+.skill__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+
+.skill__card {
+  font-size: 6rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 1rem;
+  padding: auto;
+  background: var(--color-bg-variant);
+  transition: var(--transition);
+}
+
+.skill__card:hover {
+  border-color: var(--color-primary);
+  background: var(--color-bg-variant-opacity);
+}
