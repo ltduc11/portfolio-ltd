@@ -78,12 +78,11 @@ section {
   flex-direction: column;
 }
 
-section > .section__name > h2,
-section > .section__name > h5 {
+.section__name > h5 {
   color: var(--color-light);
 }
 
-section > .section__name > h2 {
+.section__name > h2 {
   color: var(--color-primary);
 }
 
