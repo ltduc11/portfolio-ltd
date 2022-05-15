@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import { FiAward } from "react-icons/fi";
+import AboutCard from "./AboutCard";
 const About = () => {
   return (
     <section id="about">
@@ -20,23 +20,9 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <div className="about__card">
-              <FiAward />
-              <h5>Card 1</h5>
-              <small>card content 1</small>
-            </div>
-
-            <div className="about__card">
-              <FiAward />
-              <h5>Card 2</h5>
-              <small>card content 2</small>
-            </div>
-
-            <div className="about__card">
-              <FiAward />
-              <h5>Card 3</h5>
-              <small>card content 3</small>
-            </div>
+            <AboutCard title="card 1" description="description 1" />
+            <AboutCard title="card 2" description="description 2" />
+            <AboutCard title="card 3" description="description 3" />
           </div>
           <div className="about__btn">
             <a href="#contact" className="btn btn-primary">

@@ -26,3 +26,17 @@
   border-color: var(--color-primary);
   background: var(--color-bg-variant-opacity);
 }
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
+@media screen and (max-width: 1023px) {
+}
+
+/* ----- MEDIA QUERIES (SMALL DEVICES) ----*/
+@media screen and (max-width: 767px) {
+  .skill__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+}

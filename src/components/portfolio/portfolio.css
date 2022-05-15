@@ -30,6 +30,7 @@
 
 .portfolio__card-img {
   padding: 1rem;
+  margin: auto 0;
 }
 .portfolio__card-content {
   display: grid;
@@ -52,4 +53,17 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
+@media screen and (max-width: 1023px) {
+}
+
+/* ----- MEDIA QUERIES (SMALL DEVICES) ----*/
+@media screen and (max-width: 767px) {
+  .portfolio__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 }

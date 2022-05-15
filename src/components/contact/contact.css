@@ -2,6 +2,7 @@
   height: calc(100% - 12rem);
   display: grid;
   grid-template-columns: 40% 60%;
+  min-height: max-content;
 }
 
 .contact__options {
@@ -58,4 +59,25 @@ textarea {
 
 .contact__form-btn {
   float: right;
+}
+
+/* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
+@media screen and (max-width: 1023px) {
+}
+
+/* ----- MEDIA QUERIES (SMALL DEVICES) ----*/
+@media screen and (max-width: 767px) {
+  .contact__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 1rem;
+  }
+
+  .contact__options {
+    gap: 1rem;
+  }
+  section {
+    height: max-content;
+  }
 }

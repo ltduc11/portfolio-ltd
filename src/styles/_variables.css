@@ -1,0 +1,16 @@
+:root {
+  --color-bg: #3a3845;
+  --color-bg-variant: #201f27;
+  --color-bg-variant-opacity: #201f277b;
+  --color-primary: #f7ccac;
+  /* --color-primary-variant: #rgba(77, 181, 255, 0.4); */
+  --color-secondary: #c69b7bb3;
+  --color-white: #fff;
+  --color-light: #rgba(255, 255, 255, 0.6);
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
