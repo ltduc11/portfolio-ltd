@@ -2,7 +2,7 @@ footer {
   background: var(--color-primary);
   text-align: center;
   color: var(--color-bg);
-  padding: 6rem 0;
+  padding: 3rem 0 6rem;
 }
 
 footer a {
@@ -10,9 +10,12 @@ footer a {
 }
 
 .footer__logo {
-  font-size: 2rem;
-  font-weight: 500;
   display: inline-block;
+  width: 30%;
+}
+
+.footer__logo:hover {
+  opacity: 60%;
 }
 
 .footer__socials {

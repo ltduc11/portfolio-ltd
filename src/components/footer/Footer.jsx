@@ -1,11 +1,12 @@
 import React from "react";
 import "./footer.css";
 import { BsFacebook, BsInstagram, BsGithub } from "react-icons/bs";
+import logo from "../../assets/logo_transparent.png";
 const Footer = () => {
   return (
     <footer>
       <a href="#header" className="footer__logo">
-        ltduc
+        <img src={logo} alt="logo" />
       </a>
       <div className="footer__socials">
         <a
