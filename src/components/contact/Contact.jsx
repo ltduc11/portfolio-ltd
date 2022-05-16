@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__form">
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} autoComplete="off">
             <input
               type="text"
               name="name"

@@ -1,6 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutCard from "./AboutCard";
+import { about } from "../../data";
 const About = () => {
   return (
     <section id="about">
@@ -10,19 +11,22 @@ const About = () => {
       </div>
       <div className="container about__container">
         <div className="about__me">
-          <h3 className="about__me-header">I'm Le Thai Duc</h3>
+          <h3 className="about__me-header">{about.me.header}</h3>
           <div className="about__me-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates
-            soluta, aut earum nemo recusandae cumque perferendis! Recusandae
-            alias accusamus atque.
+            {about.me.content.map((sentence, index) => (
+              <p key={index}>{sentence}</p>
+            ))}
           </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <AboutCard title="card 1" description="description 1" />
-            <AboutCard title="card 2" description="description 2" />
-            <AboutCard title="card 3" description="description 3" />
+            {about.cards.map((card, index) => (
+              <AboutCard
+                key={index}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
           </div>
           <div className="about__btn">
             <a href="#contact" className="btn btn-primary">

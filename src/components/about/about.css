@@ -1,18 +1,20 @@
 .about__container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   height: calc(100% - 12rem);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
 }
 
 .about__me {
-  width: 50%;
+  width: 100%;
+  height: max-content;
   border: 1px solid var(--color-primary);
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .about__me-header {
+  margin-bottom: 1rem;
 }
 
 .about__me-content {
@@ -57,6 +59,7 @@
 /* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
 @media screen and (max-width: 1023px) {
   .about__container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
@@ -73,16 +76,6 @@
 /* ----- MEDIA QUERIES (SMALL DEVICES) ----*/
 @media screen and (max-width: 767px) {
   .about__container {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .about__me {
-    width: 100%;
-  }
-
-  .about__content {
-    width: 100%;
   }
 
   .about__cards {
