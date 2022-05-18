@@ -1,5 +1,6 @@
 .skill__container {
-  height: calc(100% - 12rem);
+  /* height: calc(100% - 12rem); */
+  height: max-content;
   display: flex;
   align-items: center;
 }
@@ -8,17 +9,21 @@
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .skill__card {
-  font-size: 6rem;
+  height: width;
+
+  background: var(--color-bg-variant);
+  margin: 1rem;
+  padding: 1rem;
+
   border: 1px solid transparent;
   border-radius: 1rem;
+
   text-align: center;
-  margin: 1rem;
-  padding: auto;
-  background: var(--color-bg-variant);
+
   transition: var(--transition);
 }
 
@@ -27,6 +32,11 @@
   background: var(--color-bg-variant-opacity);
 }
 
+.skill__card-logo {
+  font-size: 5rem;
+}
+.skill__card-title {
+}
 /* ----- MEDIA QUERIES (MEDIUM DEVICES) ----*/
 @media screen and (max-width: 1023px) {
 }

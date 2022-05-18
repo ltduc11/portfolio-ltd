@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/ltd-pic.png";
+
 function Header() {
   return (
     <header id="header">
