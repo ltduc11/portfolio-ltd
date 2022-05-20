@@ -27,7 +27,7 @@ function App() {
     navRef.topSkills = skillsRef.current.offsetTop;
     navRef.topPortfolio = portfolioRef.current.offsetTop;
     navRef.topContact = contactRef.current.offsetTop;
-  }, []);
+  });
   return (
     <>
       <Header />

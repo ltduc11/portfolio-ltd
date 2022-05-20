@@ -28,7 +28,7 @@ const Nav = ({ navRef }) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", navHighlighter);
-  }, []);
+  });
   return (
     <nav>
       <a
