@@ -2,9 +2,10 @@ import React from "react";
 import "./about.css";
 import AboutCard from "./AboutCard";
 import { about } from "../../data";
-const About = () => {
+
+const About = React.forwardRef((props, ref) => {
   return (
-    <section id="about">
+    <section ref={ref} id="about">
       <div className="section__name">
         <h5>Get to know</h5>
         <h2>About Me</h2>
@@ -37,6 +38,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

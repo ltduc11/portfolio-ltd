@@ -3,9 +3,9 @@ import "./skills.css";
 import SkillCard from "./SkillCard";
 import { skills } from "../../data";
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
   return (
-    <section id="skills">
+    <section id="skills" ref={ref}>
       <div className="section__name">
         <h2>Skills</h2>
       </div>
@@ -18,6 +18,6 @@ const Skills = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Skills;

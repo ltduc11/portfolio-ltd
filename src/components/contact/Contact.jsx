@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaTelegramPlane, FaFacebookMessenger } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = React.forwardRef((props, ref) => {
   const EMAIL_JS = {
     SERVICE_ID: "service_4l3kitz",
     TEMPLATE_ID: "template_4t844yy",
@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" ref={ref}>
       <div className="section__name">
         <h5>Get in touch</h5>
         <h2>Contact Me</h2>
@@ -96,6 +96,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Contact;

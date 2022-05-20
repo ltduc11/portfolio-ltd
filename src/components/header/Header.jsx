@@ -3,7 +3,7 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/ltd-pic.png";
 
-function Header() {
+const Header = () => {
   return (
     <header id="header">
       <div className="container header__container">
@@ -17,6 +17,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

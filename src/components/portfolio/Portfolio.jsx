@@ -2,9 +2,9 @@ import React from "react";
 import "./portfolio.css";
 import PortfolioCard from "./PortfolioCard";
 import { portfolio } from "../../data";
-const Portfolio = () => {
+const Portfolio = React.forwardRef((props, ref) => {
   return (
-    <div id="portfolio">
+    <div id="portfolio" ref={ref}>
       <div className="section__name">
         <h2>Portfolio</h2>
       </div>
@@ -25,6 +25,6 @@ const Portfolio = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Portfolio;
